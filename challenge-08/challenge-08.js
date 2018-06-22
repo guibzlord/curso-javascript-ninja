@@ -32,16 +32,15 @@ function showName () {
 Declare uma variável chamada `varShowName` que recebe a função criada acima.
 */
 // ?
-var varShowName = function showName() {
-	return showName.name;
-}
+var varShowName = showName;
+
 /*
 Usando a variável criada acima, mostre no console o nome e o retorno da função
 atribuída a ela, com a seguinte frase:
 "A função [NOME DA FUNÇÃO] retorna [RETORNO DA FUNÇÃO]."
 */
 // ?
-console.log( 'A função ' + varShowName() + ' retorna ' + showName() + '.' );
+console.log( 'A função ' + varShowName.name + ' retorna ' + varShowName() + '.' );
 /*
 Crie uma função literal chamada `calculator`, que funcione assim:
 - A função deve receber um parâmetro que dirá qual operação matemática ela
@@ -82,7 +81,7 @@ function calculator( operador ) {
 			default: 
 				return 'Operação inválida';	
 		}
-		return 'Resultado da operação: ' + num1 + operador + num2 + ' = ' + resultado + '.';
+		return 'Resultado da operação: ' + num1  + ' ' + operador + ' ' + num2 + '  = ' + resultado + '.';
 	};	
 }
 
