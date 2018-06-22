@@ -13,7 +13,9 @@ o resultado no console, com a frase:
 "A soma de [VALOR 1] e [VALOR2] é igual a [RESULTADO]."
 */
 // ?
-console.log( 'A soma de 5 e 5 é igual a ' + sum(5, 5) + '.' );
+var valor1 = 10;
+var valor2 = 20;
+console.log( 'A soma de ' + valor1 + ' e ' + valor2 + ' é igual a ' + sum( valor1,  valor2 ) + '.' );
 /*
 Mostre no console o nome da função criada acima, com a frase:
 "O nome da função que faz a soma é [NOME DA FUNÇÃO]."
@@ -81,7 +83,7 @@ function calculator( operador ) {
 			default: 
 				return 'Operação inválida';	
 		}
-		return 'Resultado da operação: ' + num1  + ' ' + operador + ' ' + num2 + '  = ' + resultado + '.';
+		return 'Resultado da operação: ' + num1  + ' ' + operador + ' ' + num2 + ' = ' + resultado + '.';
 	};	
 }
 
